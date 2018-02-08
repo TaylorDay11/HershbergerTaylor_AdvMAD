@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Favorite Barn Animal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlQ-0E-9z4">
+                                <rect key="frame" x="16" y="40" width="343" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAa-Sd-HwV">
+                                <rect key="frame" x="65" y="568" width="245" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmi-ng-zWT">
+                                <rect key="frame" x="99" y="82.5" width="177" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="msb-c3-Ta3"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="6pg-KB-sz4"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mmi-ng-zWT" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="99" id="4C8-fo-yAK"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="QlQ-0E-9z4" secondAttribute="trailing" constant="16" id="FyZ-Ng-sjv"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Mmi-ng-zWT" secondAttribute="trailing" constant="99" id="Pac-e1-U1W"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="UAa-Sd-HwV" secondAttribute="bottom" constant="50" id="RwS-HL-1E1"/>
+                            <constraint firstItem="QlQ-0E-9z4" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="Umi-70-Vx3"/>
+                            <constraint firstItem="Mmi-ng-zWT" firstAttribute="top" secondItem="QlQ-0E-9z4" secondAttribute="bottom" constant="15" id="atD-B0-NzL"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="UAa-Sd-HwV" secondAttribute="trailing" constant="65" id="jV9-sh-EEy"/>
+                            <constraint firstItem="QlQ-0E-9z4" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="vLd-Un-Vx5"/>
+                            <constraint firstItem="UAa-Sd-HwV" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="65" id="wv9-GX-Icn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-farm-filled-50" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="animalPicker" destination="Mmi-ng-zWT" id="PWd-Dm-Mwj"/>
+                        <outlet property="choiceLabel" destination="UAa-Sd-HwV" id="RkM-zS-oZ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.125" y="-323.23943661971833"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="HcG-eW-ddc">
+            <objects>
+                <viewController id="uXY-Fm-g7j" customClass="ThirdViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mev-Er-gCy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Animal Noises" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4l-Ck-eTn">
+                                <rect key="frame" x="16" y="70" width="343" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="cyb-3o-eSe">
+                                <rect key="frame" x="163" y="170" width="49" height="144"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YH3-ur-bZt">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
+                                        <state key="normal" title="Record"/>
+                                        <connections>
+                                            <action selector="recordAudio:" destination="uXY-Fm-g7j" eventType="touchUpInside" id="pVJ-Ww-q4b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iE-OO-J8D">
+                                        <rect key="frame" x="9.5" y="57" width="30" height="30"/>
+                                        <state key="normal" title="Play"/>
+                                        <connections>
+                                            <action selector="playAudio:" destination="uXY-Fm-g7j" eventType="touchUpInside" id="o8T-YR-jx1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSg-Ch-xMR">
+                                        <rect key="frame" x="8.5" y="114" width="32" height="30"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopAudio:" destination="uXY-Fm-g7j" eventType="touchUpInside" id="bqZ-e1-DcQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t4l-Ck-eTn" firstAttribute="leading" secondItem="fVE-sL-Vck" secondAttribute="leading" constant="16" id="5mx-ra-eik"/>
+                            <constraint firstItem="cyb-3o-eSe" firstAttribute="leading" secondItem="fVE-sL-Vck" secondAttribute="leading" constant="163" id="BK7-dH-kQu"/>
+                            <constraint firstItem="t4l-Ck-eTn" firstAttribute="top" secondItem="fVE-sL-Vck" secondAttribute="top" constant="50" id="T7h-AK-EeS"/>
+                            <constraint firstItem="cyb-3o-eSe" firstAttribute="top" secondItem="mev-Er-gCy" secondAttribute="topMargin" constant="150" id="dvK-ia-2Zw"/>
+                            <constraint firstItem="fVE-sL-Vck" firstAttribute="trailing" secondItem="t4l-Ck-eTn" secondAttribute="trailing" constant="16" id="ile-1l-sqG"/>
+                            <constraint firstItem="fVE-sL-Vck" firstAttribute="trailing" secondItem="cyb-3o-eSe" secondAttribute="trailing" constant="163" id="nzu-cy-N3A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fVE-sL-Vck"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-microphone-filled-50" id="KIU-Zp-1NA"/>
+                    <connections>
+                        <outlet property="playButton" destination="7iE-OO-J8D" id="05y-LZ-sQ9"/>
+                        <outlet property="recordButton" destination="YH3-ur-bZt" id="me7-Ic-3oS"/>
+                        <outlet property="stopButton" destination="nSg-Ch-xMR" id="KdY-eD-1an"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iF7-e3-IcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50.399999999999999" y="776.76161919040487"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Want to learn more about barn animals?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u17-Wj-bI8">
+                                <rect key="frame" x="16" y="59" width="343" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4q-Me-cWK">
+                                <rect key="frame" x="40" y="220" width="30" height="30"/>
+                                <state key="normal" title="Yes!"/>
+                                <connections>
+                                    <action selector="yesButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="aVQ-gZ-SKl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p4q-Me-cWK" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="40" id="GZE-jY-NPW"/>
+                            <constraint firstItem="p4q-Me-cWK" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="200" id="OfH-Gh-hUe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-info-filled-50" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="uXY-Fm-g7j" kind="relationship" relationship="viewControllers" id="wAA-Cw-w3V"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-farm-filled-50" width="30" height="30"/>
+        <image name="icons8-info-filled-50" width="30" height="30"/>
+        <image name="icons8-microphone-filled-50" width="30" height="30"/>
+    </resources>
+</document>
