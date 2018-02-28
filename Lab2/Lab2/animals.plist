@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Savannah</key>
+	<array>
+		<string>Elephant</string>
+		<string>Zebra</string>
+		<string>Rhino</string>
+	</array>
+	<key>Desert</key>
+	<array>
+		<string>Armadillo</string>
+		<string>Camel</string>
+		<string>Lizard</string>
+	</array>
+	<key>Home</key>
+	<array>
+		<string>Cat</string>
+		<string>Dog</string>
+		<string>Fish</string>
+		<string>Bunny</string>
+		<string>Hamster</string>
+	</array>
+	<key>Farm</key>
+	<array>
+		<string>Cow</string>
+		<string>Horse</string>
+		<string>Sheep</string>
+		<string>Pig</string>
+		<string>Chicken</string>
+	</array>
+	<key>Jungle</key>
+	<array>
+		<string>Tiger</string>
+		<string>Panther</string>
+		<string>Snake</string>
+	</array>
+	<key>Ocean</key>
+	<array>
+		<string>Whale</string>
+		<string>Shark</string>
+		<string>Dolphin</string>
+		<string>Fish</string>
+	</array>
+</dict>
+</plist>
